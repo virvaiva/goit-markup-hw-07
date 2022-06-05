@@ -1,0 +1,160 @@
+/* Портфолио */
+.filtr {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.main-list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.main-list .item+.item {
+    margin-left: 8px;
+}
+
+.filtr-button {
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    color: var(--title-text-color);
+    font-family: inherit;
+
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    transition: background-color var(--anim),
+        color var(--anim);
+}
+
+.filtr-button:hover,
+.filtr-button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.filtr-link {
+    text-decoration: none;
+    display: inline-block;
+
+    transition: box-shadow var(--anim);
+}
+
+.filtr-link:hover,
+.filtr-link:focus {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%),
+        0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+
+.portfolio {
+    border-right: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+}
+
+
+.filtr-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.filtr-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.filtr-list .item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+
+.filtr-list .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.filtr-list .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+
+.filtr-text {
+    margin: 0;
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.card-filtr {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--anim);
+
+}
+
+.text-overlay {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+}
+
+
+.filtr-link:hover .overlay,
+.filtr-link:focus .overlay {
+    transform: translateY(0);
+
+}
