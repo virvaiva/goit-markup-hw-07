@@ -9,11 +9,12 @@
     justify-content: center;
 
     margin-bottom: 50px;
+
+    .main-list:not(:last-child) {
+        margin-left: 8px;
+    }
 }
 
-.main-list .item + .item {
-    margin-left: 8px;
-}
 
 .filtr-button {
     border: 1px solid transparent;
@@ -24,7 +25,7 @@
     color: var(--title-text-color);
     font-family: inherit;
 
-    background-color: #F5F4FA;
+    background-color: #f5f4fa;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -32,33 +33,34 @@
 
     cursor: pointer;
 
-    transition: background-color var(--anim),
-        color var(--anim);
+    transition: background-color var(--anim), color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: #2196f3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .08),
+            0px 2px 2px rgba(0, 0, 0, .12);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
-.filtr-button:hover,
-.filtr-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
 
 .filtr-link {
     text-decoration: none;
     display: inline-block;
 
     transition: box-shadow var(--anim);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%),
+            0px 4px 4px rgb(0 0 0 / 6%),
+            1px 4px 6px rgb(0 0 0 / 16%);
+    }
 }
 
-.filtr-link:hover,
-.filtr-link:focus {
-    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%),
-        0px 4px 4px rgb(0 0 0 / 6%),
-        1px 4px 6px rgb(0 0 0 / 16%);
-}
+
 
 
 .portfolio {
@@ -76,7 +78,6 @@
 .filtr-title {
     margin-top: 0;
     margin-bottom: 4px;
-
 
     color: var(--title-text-color);
 

@@ -1,5 +1,5 @@
 // utils
-@import './utils/vars';
+@import './utils/variables';
 @import './utils/visually-hidden';
 
 
@@ -11,11 +11,9 @@
 
 //components
 @import './components/logo';
-@import './components/button';
 @import './components/contacts';
 @import './components/modal-forms';
 @import './components/socials';
-@import './components/portfolio';
 
 //layouts
 @import './layouts/header';
@@ -26,6 +24,7 @@
 @import './layouts/command';
 @import './layouts/clients';
 @import './layouts/footer';
+@import './layouts/portfolio';
 
 
 
